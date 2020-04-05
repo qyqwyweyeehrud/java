@@ -5,19 +5,19 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetExam {
-	
+	//!!
 	
 	public static void main(String[] args) {
-		Set <String> set = new HashSet<String>();//´ÙÇüÈ­ÇÒ¶§ ÁÖÀÇÇÒÁ¡= ÀÚ½Ä°³Ã¼¿¡ Ãß°¡µÈ ¸â¹ö(ÇÊµå ¸Ş¼Òµå)´Â »ç¿ëÇÒ¼ö ¾ø´Ù
-												//»ç¿ëÇÏ°í½Í´Ù¸é Ä³½ºÆÃÀÌ ÇÊ¿äÇÏ´Ù
+		Set <String> set = new HashSet<String>();//ë‹¤í˜•í™”í• ë•Œ ì£¼ì˜í• ì = ìì‹ê°œì²´ì— ì¶”ê°€ëœ ë©¤ë²„(í•„ë“œ ë©”ì†Œë“œ)ëŠ” ì‚¬ìš©í• ìˆ˜ ì—†ë‹¤
+												//ì‚¬ìš©í•˜ê³ ì‹¶ë‹¤ë©´ ìºìŠ¤íŒ…ì´ í•„ìš”í•˜ë‹¤
 		set.add("java");//1
 		set.add("JDBC");//2
 		set.add("servlet/JSP");//3
 		set.add("java");//4
-		set.add("JAVA");//5//´ë¼Ò¹®ÀÚ¸¦ ±¸º°ÇÑ´Ù."A".equals("a") == falseÀÌ±â¶§¹®¿¡
-		set.add("mtBatis");//6 setÀº Áı¾î³ÖÀº ¼ø¼­°¡¾ø´Ù
+		set.add("JAVA");//5//ëŒ€ì†Œë¬¸ìë¥¼ êµ¬ë³„í•œë‹¤."A".equals("a") == falseì´ê¸°ë•Œë¬¸ì—
+		set.add("mtBatis");//6 setì€ ì§‘ì–´ë„£ì€ ìˆœì„œê°€ì—†ë‹¤
 		
-		System.out.println("setÀÇ »çÀÌÁî:" +set.size());
+		System.out.println("setì˜ ì‚¬ì´ì¦ˆ:" +set.size());
 		
 		Iterator <String> iterator = set.iterator();
 		while(iterator.hasNext()) {
@@ -32,7 +32,7 @@ public class HashSetExam {
 		set.remove("java");
 		set.remove("mtBatis");
 		
-		System.out.println("setÀÇ °¹¼ö:"+set.size());
+		System.out.println("setì˜ ê°¯ìˆ˜:"+set.size());
 		
 		iterator = set.iterator();
 		while(iterator.hasNext()) {
@@ -42,7 +42,7 @@ public class HashSetExam {
 		
 		set.clear();
 		
-		if(set.isEmpty()) {System.out.println("ºñ¾îÀÖÀ½");
+		if(set.isEmpty()) {System.out.println("ë¹„ì–´ìˆìŒ");
 		}
 		
 	
@@ -53,8 +53,8 @@ public class HashSetExam {
 		memberset.add(new MemberVo("a002","1111","hong","010-0000"));
 		
 		memberset.add(new MemberVo("a002","2222","kim","010-1234"));
-		memberset.add(new MemberVo("a002","1111","hong","010-0000"));//ÇØ½ÃÄÚµåÀÌÄ÷Áî°¡ ¾øÀ»¶§ ÀÌ¾ÆÀÌ¿Í ¶È°°Àº µ¥ÀÌÅÍ¸¦ Ã£À¸·Á°íÇÏ¸é Ã£Áö¸øÇÑ´Ù
-		System.out.println("¸â¹ösetÀÇ »çÀÌÁî:"+memberset.size());//¾ÆÀÌµğ¿Í Æù¹øÈ£°¡ ¶È°°±â¶§¹®¿¡ ÀúÀåµÇÁö ¾Ê¾Ò´Ù.
+		memberset.add(new MemberVo("a002","1111","hong","010-0000"));//í•´ì‹œì½”ë“œì´í€„ì¦ˆê°€ ì—†ì„ë•Œ ì´ì•„ì´ì™€ ë˜‘ê°™ì€ ë°ì´í„°ë¥¼ ì°¾ìœ¼ë ¤ê³ í•˜ë©´ ì°¾ì§€ëª»í•œë‹¤
+		System.out.println("ë©¤ë²„setì˜ ì‚¬ì´ì¦ˆ:"+memberset.size());//ì•„ì´ë””ì™€ í°ë²ˆí˜¸ê°€ ë˜‘ê°™ê¸°ë•Œë¬¸ì— ì €ì¥ë˜ì§€ ì•Šì•˜ë‹¤.
 		
 		Iterator<MemberVo> iter2 = memberset.iterator();
 		while(iter2.hasNext()) {
